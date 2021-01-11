@@ -15,7 +15,7 @@ namespace TDDAuthentication.Tests
         public void ShouldReturn_Sucess_Message_When_Valid_User_Credentials()
         {
             User createAccount = new User();
-            string result = createAccount.createUser("amish", "TY56345148");
+            string result = createAccount.createUser("amish", "XZ56345148");
             Assert.AreEqual("User Created Successfully", result);
         }
 
