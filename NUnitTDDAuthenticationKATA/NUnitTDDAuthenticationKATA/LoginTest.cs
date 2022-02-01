@@ -21,7 +21,7 @@ namespace TDDAuthentication.Tests
         [Test]        
         public void ShouldReturn_SucessMessage_When_Valid_UserCredentials_Are_Passed()
         {
-            createAccount.Users.Add("amish", "34514");
+            createAccount.Users.Add("amish3", "34514");
 
             loginUser.CreateUser(createAccount);
 
@@ -34,7 +34,7 @@ namespace TDDAuthentication.Tests
         [Test]
         public void ShouldReturn_FailureMessage_When_InValid_UserName_Is_Supplied()
         {
-            createAccount.Users.Add("amish", "34514");
+            createAccount.Users.Add("amish1", "34514");
 
             loginUser.CreateUser(createAccount);
             
@@ -60,7 +60,7 @@ namespace TDDAuthentication.Tests
         [Test]
         public void ShouldReturn_FailureMessage_When_Supplied_Password_Is_Empty()
         {
-            createAccount.Users.Add("amish", "34514");
+            createAccount.Users.Add("amish2", "34514");
 
             loginUser.CreateUser(createAccount);
 
